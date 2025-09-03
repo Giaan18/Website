@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+  <title>Giaan - My Story</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-pZTx8k3..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <!-- Background -->
+  <div class="background"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#life">Cuộc đời</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Music Control -->
+  <div class="music-control">
+    <i id="volume-icon" class="fa-solid fa-volume-high"></i>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.8">
+  </div>
+
+  <!-- Sections -->
+  <section id="about" class="section fade-container">
+    <div class="content-box fade">
+      <h1 class="title">Giới thiệu</h1>
+      <p>
+        Xin chào, tôi là <b>Bùi Đoàn Ngọc Gia An</b>, hay còn được gọi là <b>giaan</b>.  
+        Tôi hiện tại là sinh viên năm 2, đang du học tại Nga. Tôi sống ở Đồng Tháp – miền Tây Việt Nam.  
+        Tôi là một cô gái năng động, hay cười, nhưng sâu thẳm lại là một người hay suy nghĩ, mệt mỏi, dễ chán nản.  
+        Project này sẽ cho bạn thấy toàn bộ hoàn cảnh và con người thật của tôi.
+      </p>
+    </div>
+  </section>
+
+  <section id="life" class="section fade-container">
+    <div class="content-box fade">
+      <h1 class="title">Cuộc đời</h1>
+      <p>
+        Tôi lớn lên trong một gia đình không hoàn hảo. Bố mẹ tôi ly hôn từ khi tôi một tuổi, tôi được bà nuôi lớn.  
+        Bố nóng tính, thường khiến tôi sợ hãi. Mẹ thì sa vào cờ bạc, nhiều lần tôi tận mắt chứng kiến bố mẹ đánh nhau.  
+        Có lúc bố cầm dao dọa mẹ ngay trước mặt tôi. Tôi chỉ biết khóc, quỳ xin.  
+        Từ nhỏ, tôi sống trong sự lo âu, sợ hãi. Đến bây giờ, mẹ đã đi nước ngoài, bố vẫn phụ thuộc vào bà.  
+        Tôi, một đứa trẻ của gia đình tan vỡ, chỉ biết ôm ký ức ấy và cố gắng bước tiếp.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-container">
+    <div class="content-box">
+      <h1 class="title fade">Liên hệ</h1>
+      <div class="contact-container">
+        <div class="contact-card fade">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>quanlibotvass@gmail.com</p>
+          <a href="mailto:quanlibotvass@gmail.com" class="btn">Gửi Email</a>
+        </div>
+        <div class="contact-card fade">
+          <i class="fab fa-discord"></i>
+          <h3>Discord</h3>
+          <p id="discord-tag">_emxinh</p>
+          <a href="https://discord.com/users/1255133399748841504" target="_blank" class="btn">Mở Profile</a>
+          <button onclick="copyDiscord()" class="btn">Copy Tag</button>
+        </div>
+        <div class="contact-card fade">
+          <i class="fab fa-facebook"></i>
+          <h3>Facebook</h3>
+          <p>Bùi Đoàn Ngọc Gia An</p>
+          <a href="https://www.facebook.com/share/19WS323qY3/" target="_blank" class="btn">Xem Facebook</a>
+        </div>
+        <div class="contact-card fade">
+          <i class="fas fa-link"></i>
+          <h3>guns.lol</h3>
+          <p>guns.lol/uocmolagi</p>
+          <a href="https://guns.lol/uocmolagi" target="_blank" class="btn">Mở Link</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nhạc nền -->
+  <audio id="bg-music" autoplay loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
